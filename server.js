@@ -7,6 +7,7 @@ const inputCheck = require('./utils/inputCheck')
 // express middleware
 app.use (express.urlencoded({ extended: false}));
 app.use (express.json());
+
 const db = mysql.createConnection(
     {
         host: 'localhost',
